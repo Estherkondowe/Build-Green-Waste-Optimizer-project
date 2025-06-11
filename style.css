@@ -1,0 +1,115 @@
+body{
+    font-family: Arial, sans-Serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header{
+    background-color: #2e7d32;
+    cursor: white;
+    padding: 1em;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap:1em;
+    justify-content: center;
+}
+nav li{
+    cursor:pointer;
+    font-weight: bold;
+}
+main{
+    max-width: 1200px; margin: auto;
+}
+h2 {
+  text-align: center;
+}
+#bin-status{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em;
+
+}
+.card{
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 8px;
+    width:200px;
+    background-color: #e8f5e9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#map {
+  /*height: 400px;
+  width: 90%;*/
+  margin: 20px auto;
+  border-radius: 8px;
+  border: 2px solid #4caf50;
+}
+
+
+
+
+/*css for the report page*/
+.report-form-container {
+  max-width: 500px;
+  margin: 3em auto;
+  padding: 2em;
+  background-color: #e8f5e9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+}
+
+.report-form-container h2 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+.report-form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.report-form-container input,
+.report-form-container select,
+.report-form-container textarea {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.report-form-container button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.report-form-container button:hover {
+  background-color: #1b5e20;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+  margin-top: 1em;
+}
+
+footer{
+    text-align: center;
+    background-color: #2e7d32;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+}

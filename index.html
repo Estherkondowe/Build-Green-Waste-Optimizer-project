@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Green Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Build Green Waste Optimizer</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Dashboard</li>
+            <li>Bins</li>
+            <li><a href="report.html" style="text-decoration: none;">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="bin-status">
+
+        </section>
+    
+    <section id="chart-area">
+        <h2>Cleanliness Overview</h2>
+        <canvas id="cleanChart" width="400" height="200">
+
+        </canvas>
+
+    </section>
+    <section id="map-section">
+        <h2>Bin Locations</h2>
+        <div id="map">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1EReFPsp5kKNPQEIUXlb09QY5XWynlbQ&ehbc=2E312F" width="100%" height="480" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    </main>
+    <footer>
+
+        <p>&COPY; 2025 Build Green Team</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

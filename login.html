@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Build Green</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     .login-container{
+        max-width: 500px;
+        height: 300px;
+        margin: 100px auto;
+        background: #e8f5e8;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+     }   
+     .login-container h2{
+        text-align: center;
+        margin-bottom: 1em;
+        color: #2e7d32;
+     }
+     .login-container input{
+       width: 100%;
+    
+       padding: 0.8em;
+       margin-bottom: 1em;
+       border: 1px solid #ccc ;
+       border-radius: 5px;
+     }
+     .login-container button{
+        width:100%;
+        background-color: #2e7d32;
+        color: white;
+        padding: o.8em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+     }
+     .login-container button:hover{
+        background-color: #1b5e20;
+     }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Build Green</h2>
+        <form id="loginForm">
+           
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event){
+           event.preventDefault();
+           const username= document.getElementById("username").value.trim();
+           const password= document.getElementById("password").value.trim(); 
+        
+           if(username&& password){
+            window.location.href="index.html";
+           }else{
+            alert("Please enter both username and password.");
+           }
+           
+        });
+    </script>
+    
+</body>
+</html>

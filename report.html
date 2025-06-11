@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Waste - Build Green</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Build Green Waste Optimizer </h1>
+  </header>
+<nav>
+      <ul>
+        <li onclick="location.href='index.html'">Home</li>
+        <li onclick="location.href='report.html'">Report</li>
+      </ul>
+    </nav>
+  <main>
+    <div class="report-form-container">
+      <h2>Report Unmanaged Waste</h2>
+      <form id="wasteReportForm" >
+        <label for="issueType">Issue Type</label>
+        <select id="issueType" required>
+          <option value="">Select issue</option>
+          <option>Full Bin</option>
+          <option>Overflowing</option>
+          <option>Bad Smell</option>
+          <option>Illegal Dumping</option>
+          <option>Other</option>
+        </select>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="Enter location or use current location" required>
+
+        <label for="description">Add Description</label>
+        <textarea id="description" rows="4" ></textarea>
+
+        <label for="photo">Upload Photo (Optional)</label>
+        <input type="file" id="photo" accept="image/*">
+
+        <label for="datetime">Date & Time</label>
+        <input type="datetime-local" id="datetime">
+
+        <button type="submit">Submit Report</button>
+      </form>
+
+      <p class="success-message" id="successMessage" style="display: none;">
+        ✅ Report submitted successfully!
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Build Green Team
+  </footer>
+
+  <script src="report.js"></script>
+</body>
+</html>
